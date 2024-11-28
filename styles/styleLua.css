@@ -1,0 +1,190 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.header-image {
+  width: calc(100% + 30rem);
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+  margin-right: -2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ca9849;
+  transition: all 0.4s ease;
+}
+
+.breadcrumb a:hover {
+  color: #cda330e7;
+  text-decoration: none;
+  transform: translateX(10px);
+  padding: 6px 12px;
+}
+
+.article h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.last-updated {
+  background-color: #1a1a1a;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  color: #ca9849;
+  font-size: 0.8rem;
+}
+
+.article p {
+  margin-bottom: 1.5rem;
+  color: #cccccc;
+}
+
+.article a {
+  color: #82aaff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.article a:hover {
+  color: #ffffff;
+}
+
+.article em {
+  font-style: italic;
+  color: #ffffff;
+}
+.lua-logo {
+  display: block;
+  margin: 2rem auto;
+  max-width: 200px;
+  height: auto;
+}
+
+.page-container {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Responsive */
+@media screen and (max-width: 880px) {
+  .page-container {
+    max-width: 90%;
+  }
+
+  .header-image {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-container {
+    padding: 1rem;
+  }
+
+  .article h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .meta {
+    justify-content: center;
+  }
+
+  .breadcrumb {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .lua-logo {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .page-container {
+    width: 85%;
+  }
+
+  .article h1 {
+    font-size: 1.4rem;
+  }
+
+  .meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .lua-logo {
+    max-width: 120px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .page-container {
+    width: 85%;
+  }
+
+  .article h1 {
+    font-size: 1.8rem;
+  }
+}

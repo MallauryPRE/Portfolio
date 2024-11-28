@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">   
+<title>Portfolio</title>
+  </head>
+  <body>
+    <div class="loader-container" id="loader">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <circle class="circle outer" cx="50" cy="50" r="45" />
+        <circle class="circle inner" cx="50" cy="50" r="25" />
+        <circle class="dots" cx="50" cy="5" r="3" />
+        <circle class="dots" cx="95" cy="50" r="3" />
+        <circle class="dots" cx="50" cy="95" r="3" />
+        <circle class="dots" cx="5" cy="50" r="3" />
+      </svg>
+    </div>
+    <nav>
+      <div class="navbar-brand">
+        <span class="ItalicName">Mallaury </span>PRE
+      </div>
+      <div class="navbar-links">
+        <a href="../pages/index.html"
+          ><img src="../pictures/homeLogo.png" alt="Home icon" class="nav-icon"
+        /></a>
+        <button id="openPopup" class="open-btn">
+          <img src="../pictures/burgerLogo.png" class="nav-icon" />
+        </button>
+      </div>
+    </nav>
+    <header>
+      <section class="Introduce">
+        <div class="Introduce-content">
+          <h1>
+            Bonjour <span>👋</span> Je suis Mallaury et voici mon Portfolio.
+          </h1>
+          <p>
+            Actuellement étudiant en 3ème année dans le cursus Préparation Master Digital, j'ai pour objectif de m'orienter vers un <span>master Product Manager</span>.<br>
+            Vous trouverez ci-dessous mon Curriculum Vitae, mes projets et ma
+            veille technologique.
+          </p>
+          <a href="../pages/ResumePage.html" class="cta-button">Mon CV ↗</a>
+        </div>
+      </section>
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
+    <main>
+      <div id="loader">
+        <div class="spinner"></div>
+      </div>
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <div class="popup-header">
+            <h2>Menu</h2>
+          </div>
+          <div class="popup-body">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="../pages/index.html">→ Accueil</a></li>
+              <li><a href="../pages/ResumePage.html">→ CV</a></li>
+              <li><a href="../pages/projectList.html">→ Projets</a></li>
+            </ul>
+            <h3>Liens</h3>
+            <ul>
+              <li><a href="https://github.com/MallauryPRE">Github</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/mallaury-pre-05980b305/"
+                  >Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="carousel"></div>
+      
+    
+      <div class="project-container">
+        <a href="/pages/projectList.html" class="buttonProject"
+          >Tous mes Projets ↗</a
+        >
+        </div>Ò
+      </div>
+      <div class="containerArticles">
+        <h1>Veille Technologique</h1>
+        <div class="articles">
+          <div class="year">
+            <h2>2024</h2>
+            <ul>
+              <li>
+                <span class="date">Nov 28</span>
+                <a href="../pages/veilleCyberNovVH.html"
+                  >Les usines françaises victimes de Cyberattaques</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer><p>Created by PRE Mallaury© 2024</p></footer>
+    <img
+      src="../pictures/265826e438f7381c4c643aa7d141d410.png"
+      id="scrollToTop"
+      class="scroll-top-btn"
+      alt="Scroll to top"
+    />
+    <script src="../scripts/loader.js"></script>
+    <script src="../scripts/carousel.js"></script>
+    <script src="../scripts/scroll.js"></script>
+    <script src="../scripts/menu.js"></script>
+  </body>
+</html>
